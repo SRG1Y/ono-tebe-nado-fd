@@ -53,7 +53,6 @@
 .overlay {
   z-index: -1;
   width: 100%;
-  height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -73,20 +72,21 @@
 }
 
 .aligned-text_center {
-  line-height: 1.44;
   /* ТЕБЕ */
+  line-height: 1.44;
   text-align: center;
 }
 
 .aligned-text_right {
-  line-height: 1;
   /* НАДО */
+  line-height: 1;
   text-align: right;
 }
 
 .cover__description {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
   gap: 80px;
@@ -107,7 +107,7 @@
   border: 1px solid #fff;
   color: #fff;
   font-family: Raleway, sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 22px;
   text-align: center;
   text-transform: uppercase;
