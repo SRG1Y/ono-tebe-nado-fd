@@ -2,9 +2,10 @@
   display: grid;
   grid-template-columns: 1fr 150px 1fr;
   align-items: center;
-  width: 100%;
   padding: 95px 50px 90px 50px;
   font-size: 18px;
+  min-width: 1100px;
+  max-width: 1100px;
 }
 
 .header__menu {
@@ -50,6 +51,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  min-width: 1100px;
 }
 
 .overlay {
