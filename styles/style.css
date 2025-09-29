@@ -2,10 +2,9 @@
   display: grid;
   grid-template-columns: 1fr 150px 1fr;
   align-items: center;
+  max-height: 3028px;
   padding: 95px 50px 90px 50px;
   font-size: 18px;
-  min-width: 1100px;
-  max-width: 1100px;
 }
 
 .header__menu {
@@ -46,12 +45,13 @@
 
 .cover {
   z-index: -2;
+  min-width: 1100px;
   min-height: 757px;
+  max-height: 757px;
   background-image: url(/images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-width: 1100px;
 }
 
 .overlay {
@@ -128,8 +128,9 @@
   display: flex;
   flex-direction: column;
   min-width: 100%;
+  max-width: 1052px;
   min-height: 100%;
-  padding: 179px 24px 146px 24px;
+  padding: 180px 24px 155px 24px;
 }
 
 .lots__heading {
@@ -161,7 +162,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 334px;
-  min-height: 563px;
+  min-height: 596px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -207,7 +208,7 @@
 
 .about {
   min-height: 595px;
-  padding: 35px 25px 180px 25px;
+  padding: 120px 25px 180px 25px;
 }
 
 .about__column {
@@ -262,6 +263,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   place-content: center;
   width: 100%;
+  max-height: 180px;
   padding: 0 50px 88px 50px;
   color: #000;
   font-size: 18px;
