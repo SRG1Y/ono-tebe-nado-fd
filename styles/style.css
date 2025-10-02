@@ -1,8 +1,9 @@
 .header {
   display: grid;
-  grid-template-columns: 1fr 150px 1fr;
-  align-items: center;
-  padding: 95px 50px 90px 50px;
+  grid-template-columns: 1fr 148px 1fr;
+  width: 100%;
+  padding: 92px 50px 91px 51px;
+  color: #000;
   font-size: 18px;
 }
 
@@ -13,20 +14,16 @@
 .header__links-list {
   display: flex;
   flex-direction: row;
-  gap: 35px;
+  gap: 30px;
   list-style: circle;
 }
 
-.header__links-list-item_no-bullit {
-  list-style-type: none;
-}
-
-.header__link_active {
-  text-decoration: none;
+.header__links-list-item_no-bullet {
+  list-style: none;
 }
 
 .header__logo {
-  width: 100%
+  width: 100%;
 }
 
 .header__logo-image {
@@ -47,9 +44,8 @@
 
 .cover {
   z-index: -2;
-  min-width: 1100px;
-  min-height: 757px;
-  background-image: url(../images/cover.jpg);
+  min-height: 100%;
+  background: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -58,11 +54,11 @@
 .overlay {
   z-index: -1;
   width: 100%;
-  height: 757px;
-  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 757px;
+  background-color: rgb(0 0 0 /0.6);
 }
 
-.cover__tittle {
+.cover__title {
   padding: 165px 50px 40px 51px;
   color: #fff;
   font-weight: 700;
@@ -72,41 +68,38 @@
 }
 
 .aligned-text {
-  /*ОНО*/
   display: block;
   line-height: 1.1;
 }
 
 .aligned-text_center {
-  /* ТЕБЕ */
-  line-height: 1.44;
+  line-height: 1.65;
   text-align: center;
+  margin-right: -0.2em;
 }
 
 .aligned-text_right {
-  /* НАДО */
   line-height: 1;
   text-align: right;
 }
 
 .no-letter-spacing {
-  margin-right: -0.1em;
+  margin-right: -0.3em;
 }
 
 .cover__description {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
-  gap: 78px;
-  padding: 85px 50px 50px 80px;
+  gap: 79px;
+  padding: 75px 36px 50px 38px;
 }
 
 .cover__description-text {
   color: #fff;
   font-size: 22px;
-  line-height: 1.27;
+  line-height: 28px;
   text-transform: uppercase;
   word-spacing: 1.1rem;
 }
@@ -117,7 +110,7 @@
   border: 1px solid #fff;
   color: #fff;
   font-family: Raleway, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 22px;
   text-align: center;
   text-transform: uppercase;
@@ -130,7 +123,7 @@
   flex-direction: column;
   min-width: 100%;
   min-height: 100%;
-  padding: 180px 24px 155px 24px;
+  padding: 179px 24px 146px 24px;
 }
 
 .lots__heading {
@@ -155,38 +148,27 @@
   display: flex;
   flex-direction: column;
 }
-
-.card {
-  z-index: -2;
-  display: flex;
-  flex-direction: column;
-  justify-content:space-between;
-  width: 334px;
-  height: 596px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
 .card_type_film {
   background: url(../images/card-lot-01.jpg);
-  background-position: center;
-  background-size:cover;
-  background-repeat: no-repeat;
 }
 
 .card_type_book {
   background: url(../images/card-lot-02.jpg);
-  background-position: center;
-  background-size:cover;
-  background-repeat: no-repeat;
 }
 
 .card_type_picture {
   background: url(../images/card-lot-03.jpg);
-  background-position: center;
-  background-size:cover;
+}
+.card {
+  z-index: -2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 334px;
+  min-height: 596px;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card__title {
@@ -216,12 +198,14 @@
 }
 
 .about {
-  padding: 24px 25px 180px 25px;
+  min-height: 595px;
+  padding: 11px 24px 180px 22px;
 }
 
 .about__column {
   display: grid;
-  grid-template-columns: 335px 1fr;
+  grid-template-columns: 336px 1fr;
+  grid-template-rows: 240px 1fr;
   justify-items: center;
   justify-self: center;
   align-self: center;
@@ -236,13 +220,13 @@
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  padding: 35px;
+  padding: 0px;
   background-color: rgb(0 0 0);
 }
 
 .about__logo-image {
-  width: 150px;
-  height: 110px;
+  width: 148px;
+  height: 114px;
 }
 
 .about__title {
@@ -257,7 +241,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 8px 0 0 25px;
+  padding: 8px 0 0 26px;
   padding-right: 4px;
   padding-left: 16px;
   font-size: 20px;
